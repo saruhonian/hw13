@@ -1,0 +1,27 @@
+.section-publications {
+  padding-top: 30px;
+
+  background-color: var(--grey-bg);
+
+  .link {
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  .title-gradient-red {
+    margin-bottom: 30px;
+  }
+
+  .publication-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media screen and (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.service-item {
+  display: flex;
+  flex-direction: column;
+
+  &__icon {
+    width: 92px;
+    height: 92px;
+    border-radius: 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      scale: 0.9;
+    }
+  }
+
+  &__link {
+    font-size: 22px;
+    text-decoration: none;
+  }
+
+  &__desc {
+    color: #fff;
+    line-height: 26px;
+  }
+}

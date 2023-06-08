@@ -1,0 +1,34 @@
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: grab;
+  width: fit-content;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+
+  svg {
+    stroke: var(--active-regular);
+    transition: all 0.2s ease;
+    margin-left: 5px;
+
+    @media screen and (max-width: 425px) {
+      margin-left: 2px;
+    }
+  }
+
+  &:hover {
+    a {
+      color: var(--accent);
+    }
+    svg {
+      transform: translateX(5px);
+      stroke: var(--accent);
+    }
+  }
+}

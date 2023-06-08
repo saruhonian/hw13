@@ -1,0 +1,41 @@
+.publication-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 100%;
+
+  &__separator {
+    margin-bottom: 15px;
+  }
+
+  &__container {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  &__thumbnail {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+
+  &__date {
+    text-transform: uppercase;
+    color: var(--grey-text);
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    line-height: 22px;
+    margin: 0;
+  }
+}

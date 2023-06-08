@@ -1,0 +1,38 @@
+.section-services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--page {
+    padding-top: 176px;
+
+    @media screen and (max-width: 425px) {
+      padding-top: 132px !important;
+    }
+  }
+
+  .link {
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  .title-gradient-red {
+    margin-bottom: 60px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+
+    @media screen and (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    padding-top: 30px;
+  }
+}
